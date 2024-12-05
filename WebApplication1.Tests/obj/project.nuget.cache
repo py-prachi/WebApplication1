@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vyOLm2V9wkY=",
+  "dgSpecHash": "6HdCEA6xO18=",
   "success": true,
   "projectFilePath": "/Users/prachijagtap/Documents/WebApplication1/WebApplication1.Tests/WebApplication1.Tests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/prachijagtap/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
     "/Users/prachijagtap/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
     "/Users/prachijagtap/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
+    "/Users/prachijagtap/.nuget/packages/coverlet.msbuild/6.0.2/coverlet.msbuild.6.0.2.nupkg.sha512",
     "/Users/prachijagtap/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/prachijagtap/.nuget/packages/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg.sha512",
     "/Users/prachijagtap/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
