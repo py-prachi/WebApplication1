@@ -13,7 +13,6 @@
         "packagesPath": "/Users/prachijagtap/.nuget/packages/",
         "outputPath": "/Users/prachijagtap/Documents/WebApplication1/WebApplication1/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/prachijagtap/.nuget/NuGet/NuGet.Config"
         ],
@@ -38,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
