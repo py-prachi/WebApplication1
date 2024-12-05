@@ -16,9 +16,15 @@ namespace WebApplication1.Tests.Controllers
         [SetUp]
         public void SetUp()
         {
-            // Setup In-Memory Database
+            // // Setup In-Memory Database
+            // var options = new DbContextOptionsBuilder<WebApplication1Context>()
+            //     .UseInMemoryDatabase(databaseName: "TestDatabase")
+            //     .Options;
+            //
+            
+            // Setup a fresh in-memory database for every test
             var options = new DbContextOptionsBuilder<WebApplication1Context>()
-                .UseInMemoryDatabase(databaseName: "TestDatabase")
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()) // Use a unique database name
                 .Options;
 
             _context = new WebApplication1Context(options);
@@ -65,6 +71,74 @@ namespace WebApplication1.Tests.Controllers
             Assert.IsAssignableFrom<List<Item>>(viewResult!.Model);
             var model = viewResult.Model as List<Item>;
             Assert.That(model?.Count, Is.EqualTo(2));
+        }
+        
+        [Test]
+        public async Task Create_ValidModel_AddsItemAndRedirectsToIndex()
+        {
+            // Arrange
+            var newItem = new Item { Id = 3, Name = "NewItem", Price = 30.0 };
+
+            // Act
+            var result = await _controller.Create(newItem);
+
+            // Assert the type of the result
+            Assert.IsInstanceOf<RedirectToActionResult>(result);
+
+            // Safely cast the result to RedirectToActionResult
+            var redirectResult = result as RedirectToActionResult;
+            Assert.NotNull(redirectResult);
+
+            // Assert: Check if the user is redirected to Index
+            Assert.That(redirectResult.ActionName, Is.EqualTo("Index"));
+
+            // Assert: Check if the item was added to the database
+            var items = _context.Items.ToList();
+            Assert.That(items.Count, Is.EqualTo(3)); // Initial 2 + New item
+            Assert.That(items.Any(i => i.Name == "NewItem" && i.Price == 30.0));
+        }
+
+        [Test]
+        public async Task Create_InvalidModel_ReturnsViewWithModel()
+        {
+            // Arrange
+            var invalidItem = new Item { Id = 0, Name = "", Price = -10.0 }; // Invalid model
+            _controller.ModelState.AddModelError("Name", "The Name field is required.");
+
+            // Act
+            var result = await _controller.Create(invalidItem);
+
+            // Assert the type of the result
+            Assert.IsInstanceOf<ViewResult>(result);
+
+            // Safely cast the result to ViewResult
+            var viewResult = result as ViewResult;
+            Assert.NotNull(viewResult);
+
+            // Assert: Check if the returned model is the same as the one passed in
+            Assert.That(viewResult.Model, Is.SameAs(invalidItem));
+
+            // Assert: Ensure the item is not added to the database
+            var items = _context.Items.ToList();
+            Assert.That(items.Count, Is.EqualTo(2)); // Only initial 2 items
+        }
+        
+        // Test for Create() returning a View when no model is provided
+        [Test]
+        public void Create_ReturnsViewResult()
+        {
+            // Act: Call the Create method without any model
+            var result = _controller.Create();
+
+            // Assert the type of the result
+            Assert.IsInstanceOf<ViewResult>(result);
+
+            // Safely cast the result to ViewResult
+            var viewResult = result as ViewResult;
+            Assert.NotNull(viewResult);
+
+            // Optionally: Check if the returned view has the correct name (if set)
+            Assert.Null(viewResult.ViewName); // Assumes no specific view name is set
         }
     }
 }

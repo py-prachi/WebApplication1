@@ -300,19 +300,19 @@
       "WebApplication1.Models.Item": {
         "System.Int32 WebApplication1.Models.Item::get_Id()": {
           "Lines": {
-            "5": 2
+            "5": 10
           },
           "Branches": []
         },
         "System.String WebApplication1.Models.Item::get_Name()": {
           "Lines": {
-            "6": 2
+            "6": 13
           },
           "Branches": []
         },
         "System.Double WebApplication1.Models.Item::get_Price()": {
           "Lines": {
-            "7": 2
+            "7": 11
           },
           "Branches": []
         }
@@ -480,13 +480,13 @@
       "WebApplication1.Data.WebApplication1Context": {
         "Microsoft.EntityFrameworkCore.DbSet`1<WebApplication1.Models.Item> WebApplication1.Data.WebApplication1Context::get_Items()": {
           "Lines": {
-            "10": 4
+            "10": 16
           },
           "Branches": []
         },
         "System.Void WebApplication1.Data.WebApplication1Context::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<WebApplication1.Data.WebApplication1Context>)": {
           "Lines": {
-            "6": 1
+            "6": 4
           },
           "Branches": []
         }
@@ -574,18 +574,18 @@
         },
         "Microsoft.AspNetCore.Mvc.IActionResult WebApplication1.Controllers.ItemsController::Create()": {
           "Lines": {
-            "33": 0,
-            "34": 0,
-            "35": 0
+            "33": 1,
+            "34": 1,
+            "35": 1
           },
           "Branches": []
         },
         "System.Void WebApplication1.Controllers.ItemsController::.ctor(WebApplication1.Data.WebApplication1Context)": {
           "Lines": {
-            "14": 1,
-            "15": 1,
-            "16": 1,
-            "17": 1
+            "14": 4,
+            "15": 4,
+            "16": 4,
+            "17": 4
           },
           "Branches": []
         }
@@ -593,14 +593,14 @@
       "WebApplication1.Controllers.ItemsController/<Create>d__5": {
         "System.Void WebApplication1.Controllers.ItemsController/<Create>d__5::MoveNext()": {
           "Lines": {
-            "38": 0,
-            "39": 0,
-            "40": 0,
-            "41": 0,
-            "42": 0,
-            "43": 0,
-            "45": 0,
-            "46": 0
+            "38": 2,
+            "39": 2,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "45": 1,
+            "46": 2
           },
           "Branches": [
             {
@@ -609,7 +609,7 @@
               "EndOffset": 41,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 39,
@@ -617,7 +617,7 @@
               "EndOffset": 203,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 1
             }
           ]
         }
