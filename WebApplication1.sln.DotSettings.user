@@ -1,0 +1,21 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=0E090662_002D4E99_002D46DD_002D8D5F_002DB7FF7F67112B/@EntryIndexedValue">C853FE7B-0AD3-42F3-A1C5-1193296F24CD</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=NUnit3x/@EntryIndexedValue">db4927dd-2e12-48a7-9a84-2b7e3e31b9c8</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=011efe98_002D2b1e_002D4849_002D8ab3_002Ddd05000d1782/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ItemsControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;ProjectFile&gt;C853FE7B-0AD3-42F3-A1C5-1193296F24CD/f:UnitTest1.cs&lt;/ProjectFile&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::C853FE7B-0AD3-42F3-A1C5-1193296F24CD::net9.0::WebApplication1.Tests.Controllers.ItemsControllerTest&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3496f504_002D2a17_002D454a_002D8e29_002D4cf6939a2c22/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemsControllerTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::C853FE7B-0AD3-42F3-A1C5-1193296F24CD::net9.0::WebApplication1.Tests.Controllers.ItemsControllerTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	</wpf:ResourceDictionary>
