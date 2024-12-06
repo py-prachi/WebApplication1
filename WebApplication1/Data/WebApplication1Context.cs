@@ -8,5 +8,6 @@ namespace WebApplication1.Data
         
         // Define DbSets for your entities (tables in the database)
         public DbSet<Item> Items { get; set; }  // Example entity
+        public DbSet<Order> Orders { get; set; }
     }
 }
