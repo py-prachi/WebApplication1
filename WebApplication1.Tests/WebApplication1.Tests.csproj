@@ -9,13 +9,19 @@
         <IsTestProject>true</IsTestProject>
     </PropertyGroup>
 
-    <Target Name="RunTestsAndGenerateReports">
-        <!-- Run tests and collect code coverage in JSON format -->
-        <Exec Command="dotnet test --collect:&quot;XPlat Code Coverage&quot; -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=json" />
+<!--    <Target Name="RunCodeCoverage" AfterTargets="Test">-->
+<!--        &lt;!&ndash; Run the tests with code coverage collection &ndash;&gt;-->
+<!--        <Exec Command="dotnet test &#45;&#45;collect:&quot;XPlat Code Coverage&quot;" />-->
 
-        <!-- Find the most recent folder in TestResults and generate the HTML report from coverage.json -->
-<!--        <Exec Command="find TestResults -type d -name 'TestRun_*' -print0 | xargs -0 ls -td | head -n 1 | xargs -I {} find {} -name 'coverage.json' -print0 | xargs -0 reportgenerator -reports:'{}' -targetdir:TestResults/HTML -reporttypes:Html" />-->
-    </Target>
+<!--        &lt;!&ndash; Use PowerShell to find the latest file &ndash;&gt;-->
+<!--        <Exec Command="powershell -Command &quot;$LatestFolder = Get-ChildItem -Directory -Path ./TestResults | Sort-Object LastWriteTime -Descending | Select-Object -First 1; reportgenerator -reports:&quot;$LatestFolder.FullName/coverage.cobertura.xml&quot; -targetdir:coverageresults -reporttypes:Html&quot;" />-->
+<!--    </Target>-->
+
+<!--    <Target Name="RunCodeCoverage" AfterTargets="Test">-->
+<!--        <Exec Command="dotnet test &#45;&#45;collect:&quot;XPlat Code Coverage&quot;" />-->
+<!--        <Exec Command="pwsh -Command &quot;$LatestFolder = Get-ChildItem -Directory -Path ./TestResults | Sort-Object LastWriteTime -Descending | Select-Object -First 1; reportgenerator -reports:$LatestFolder.FullName/coverage.cobertura.xml -targetdir:coverageresults -reporttypes:Html&quot;" />-->
+<!--    </Target>-->
+
 
 
     <ItemGroup>

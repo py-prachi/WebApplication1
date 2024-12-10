@@ -218,19 +218,54 @@ for (i = 0, l = charts.length; i < l; i++) {
 }
 
 var assemblies = [
+  {
+    "name": "WebApplication1",
+    "classes": [
+      { "name": "AspNetCoreGeneratedDocument.Views__ViewStart", "rp": "WebApplication1_Views__ViewStart.html", "cl": 0, "ucl": 1, "cal": 1, "tl": 3, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Home_Index", "rp": "WebApplication1_Views_Home_Index.html", "cl": 0, "ucl": 1, "cal": 1, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Home_Privacy", "rp": "WebApplication1_Views_Home_Privacy.html", "cl": 0, "ucl": 1, "cal": 1, "tl": 6, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Items_Create", "rp": "WebApplication1_Views_Items_Create.html", "cl": 0, "ucl": 1, "cal": 1, "tl": 20, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Items_Delete", "rp": "WebApplication1_Views_Items_Delete.html", "cl": 0, "ucl": 1, "cal": 1, "tl": 15, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Items_Edit", "rp": "WebApplication1_Views_Items_Edit.html", "cl": 0, "ucl": 1, "cal": 1, "tl": 20, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Items_Index", "rp": "WebApplication1_Views_Items_Index.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 29, "cb": 0, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Orders_CreateOrder", "rp": "WebApplication1_Views_Orders_CreateOrder.html", "cl": 0, "ucl": 1, "cal": 1, "tl": 23, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Orders_GetOrders", "rp": "WebApplication1_Views_Orders_GetOrders.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 31, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "AspNetCoreGeneratedDocument.Views_Shared_Error", "rp": "WebApplication1_Views_Shared_Error.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 25, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Program", "rp": "WebApplication1_Program.html", "cl": 0, "ucl": 20, "cal": 20, "tl": 40, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Controllers.HomeController", "rp": "WebApplication1_HomeController.html", "cl": 0, "ucl": 13, "cal": 13, "tl": 31, "cb": 0, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Controllers.ItemsController", "rp": "WebApplication1_ItemsController.html", "cl": 19, "ucl": 28, "cal": 47, "tl": 84, "cb": 2, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Controllers.OrdersController", "rp": "WebApplication1_OrdersController.html", "cl": 20, "ucl": 3, "cal": 23, "tl": 88, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Data.WebApplication1Context", "rp": "WebApplication1_WebApplication1Context.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 13, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Migrations.AddPriceToItem", "rp": "WebApplication1_AddPriceToItem.html", "cl": 0, "ucl": 38, "cal": 38, "tl": 78, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Migrations.CreateOrder", "rp": "WebApplication1_CreateOrder.html", "cl": 0, "ucl": 67, "cal": 67, "tl": 110, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Migrations.InitialCreate", "rp": "WebApplication1_InitialCreate.html", "cl": 0, "ucl": 40, "cal": 40, "tl": 80, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Migrations.WebApplication1ContextModelSnapshot", "rp": "WebApplication1_WebApplication1ContextModelSnapshot.html", "cl": 0, "ucl": 47, "cal": 47, "tl": 70, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Models.ErrorViewModel", "rp": "WebApplication1_ErrorViewModel.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Models.Item", "rp": "WebApplication1_Item.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 10, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Models.Order", "rp": "WebApplication1_Order.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 9, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "WebApplication1.Service.OrderService", "rp": "WebApplication1_OrderService.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+    ]},
 ];
 
-var metrics = [];
+var metrics = [{ "name": "Crap Score", "abbreviation": "crp", "explanationUrl": "https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" }, { "name": "Cyclomatic complexity", "abbreviation": "cc", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" }, { "name": "Line coverage", "abbreviation": "cov", "explanationUrl": "https://en.wikipedia.org/wiki/Code_coverage" }, { "name": "Branch coverage", "abbreviation": "bcov", "explanationUrl": "https://en.wikipedia.org/wiki/Code_coverage" }];
 
 var historicCoverageExecutionTimes = [];
 
 var riskHotspotMetrics = [
+      { "name": "Crap Score", "explanationUrl": "https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" },
+      { "name": "Cyclomatic complexity", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" },
 ];
 
 var riskHotspots = [
+  {
+    "assembly": "WebApplication1", "class": "AspNetCoreGeneratedDocument.Views_Items_Index", "reportPath": "WebApplication1_Views_Items_Index.html", "methodName": "ExecuteAsync()", "methodShortName": "ExecuteAsync()", "fileIndex": 0, "line": 3,
+    "metrics": [
+      { "value": 110, "exceeded": true },
+      { "value": 10, "exceeded": false },
+    ]},
 ];
 
-var branchCoverageAvailable = false;
+var branchCoverageAvailable = true;
 var methodCoverageAvailable = false;
 var maximumDecimalPlacesForCoverageQuotas = 1;
 
